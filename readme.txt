@@ -30,6 +30,7 @@
    npm run jest  --watch：只监听所有测试文件的变化，当有变化时则重新测试有变化的文件夹中的测试用例，即watchAll中的o模式
 ·配置：npx jest --init
    运行改命令后，将弹出配置选项，按照提示选择即可,最后生成jest.config.js
+·it：类似test
 ·jest.config.js说明：
   -- 代码：src/Jest/lesson3
   -- coverageDirectory: "testReport"：将覆盖率测试报告输出到testReport文件夹。
@@ -282,6 +283,7 @@
        })
      })
 ·vscode的jest插件：扩展中搜索Jest并安装
+  -- Jest Snippets：Jest语法提示
 
 
 *TDD：
@@ -298,7 +300,7 @@
   -- 测试覆盖率高
   -- 错误测试代码不容易出现
 ·TDD + 单元测试适用范围
-  -- 如果要写一个纯库类，跟业务没有关系，非常适合用 TDD。
+  -- 如果要写一个纯库类，跟业务没有关系，非常适合用TDD。
   -- 如果是写业务代码，常常由于测试代码中要用功能代码的数据结构，造成耦合性高
 
 *BDD：
@@ -319,6 +321,11 @@
 
 *Vue环境中配置Jest：
 ·文档：https://jestjs.io/docs/en/configuration
+
+*vue-test-utils:
+·官网：https://vue-test-utils.vuejs.org/zh/guides/
+·简介：Vue Test Utils 是 Vue.js 官方的单元测试实用工具库，为jest和vue提供了一个桥梁，暴露出一些接口，让我们更加方便的通过Jest为Vue应用编写单元测试
+
 
 
 
