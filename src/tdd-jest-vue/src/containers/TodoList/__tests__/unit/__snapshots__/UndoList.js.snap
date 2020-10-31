@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header样式发生改变做提示 1`] = `
+<div class="header">
+  <div class="header-content">
+    TodoList
+    <input type="text " data-test="input" placeholder="请输入待完成项" class="header-input">
+  </div>
+</div>
+`;
+
+exports[`UndoList 参数为[]，count 值为0，且列表无内容 1`] = `
+<div>
+  UndoList
+</div>
+`;
