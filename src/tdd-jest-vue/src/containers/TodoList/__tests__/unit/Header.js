@@ -45,5 +45,4 @@ describe('Header', () => {
     const inputValue = wrapper.vm.$data.inputValue
     expect(inputValue).toBe('')
   })
-
 })
