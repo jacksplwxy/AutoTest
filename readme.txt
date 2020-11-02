@@ -328,6 +328,8 @@
   -- （测试用例运行）速度慢
 ·BDD + 集成测试适用范围：
 
+*TDD+BDD混合测试
+
 *Vue环境中配置Jest：
 ·文档：https://jestjs.io/docs/en/configuration
 
