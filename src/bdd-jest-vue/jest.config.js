@@ -1,7 +1,7 @@
 module.exports = {
   preset: '@vue/cli-plugin-unit-jest',
   collectCoverageFrom: [
-    '**/*.vue',
+    '**/*.{vue,js}',
     '!**/node_modules/**'
   ]
 }

@@ -14,6 +14,7 @@
 <script>
 import Header from './components/Header'
 import UndoList from './components/UndoList'
+import axios from 'axios'
 export default {
   name: 'TodoList',
   components: {
@@ -55,6 +56,11 @@ export default {
         status: 'div'
       })
     }
+  },
+  mounted () {
+    axios.get('/getUndoList.json').then(res => {
+      this.undoList = res.data
+    }).catch((e) => {})
   }
 }
 </script>
