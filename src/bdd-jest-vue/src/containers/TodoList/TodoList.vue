@@ -58,17 +58,17 @@ export default {
     }
   },
   mounted () {
-    // axios.get('/getUndoList.json').then(res => {
-    //   this.undoList = res.data
-    // }).catch((e) => {})
-    setTimeout(() => {
-      axios
-        .get('/getUndoList.json')
-        .then((res) => {
-          this.undoList = res.data
-        })
-        .catch((e) => {})
-    }, 5000)
+    axios.get('/getUndoList.json').then(res => {
+      this.undoList = res.data
+    }).catch((e) => {})
+    // setTimeout(() => {
+    //   axios
+    //     .get('/getUndoList.json')
+    //     .then((res) => {
+    //       this.undoList = res.data
+    //     })
+    //     .catch((e) => {})
+    // }, 5000)
   }
 }
 </script>
