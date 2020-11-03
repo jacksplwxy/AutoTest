@@ -5,7 +5,7 @@ import store from '../../../../store'
 import axios from '../../__mocks__/axios'
 
 beforeEach(() => {
-  axios.successs=true
+  axios.successs = true
   jest.useFakeTimers()
 })
 
@@ -26,42 +26,41 @@ it(`
   expect(listItems.at(0).text()).toContain(content)
 })
 
-// it(`
-//     1. 用户进入页面时，请求远程数据
-//     2. 列表应该展示远程返回的数据
-// `, (done => {
-//   const wrapper = mount(TodoList, { store })
-//   wrapper.vm.$nextTick(() => {
-//     const listItems = findTestWrapper(wrapper, 'list-item')
-//     expect(listItems.length).toBe(2)
-//      done()
-//   })
-// })
-
 it(`
-1. 用户进入页面时，等待 5s，请求远程数据
-2. 列表应该展示远程返回的数据
+    1. 用户进入页面时，请求远程数据
+    2. 列表应该展示远程返回的数据
 `, (done) => {
-  const wrapper = mount(TodoList, {
-    store
-  })
-  
-  jest.runAllTimers()
+  const wrapper = mount(TodoList, { store })
   wrapper.vm.$nextTick(() => {
     const listItems = findTestWrapper(wrapper, 'list-item')
     expect(listItems.length).toBe(2)
     done()
   })
-
 })
+
+// it(`
+// 1. 用户进入页面时，等待 5s，请求远程数据
+// 2. 列表应该展示远程返回的数据
+// `, (done) => {
+//   const wrapper = mount(TodoList, {
+//     store
+//   })
+
+//   jest.runAllTimers()
+//   wrapper.vm.$nextTick(() => {
+//     const listItems = findTestWrapper(wrapper, 'list-item')
+//     expect(listItems.length).toBe(2)
+//     done()
+//   })
+// })
 
 it(`
     1. 用户进入页面时，请求远程数据失败
     2. 列表应该展示空数据，不应该挂掉
 `, (done) => {
-  axios.successs=false  //返回失败时
+  axios.successs = false // 返回失败时
   const wrapper = mount(TodoList, { store })
-  
+
   wrapper.vm.$nextTick(() => {
     const listItems = findTestWrapper(wrapper, 'list-item')
     expect(listItems.length).toBe(0)

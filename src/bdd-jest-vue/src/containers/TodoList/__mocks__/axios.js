@@ -13,13 +13,12 @@ const undoList = {
 export default {
   get (url) {
     if (url === '/getUndoList.json') {
-      return new Promise((resolve,reject) => {
-        if(this.successs){
+      return new Promise((resolve, reject) => {
+        if (this.successs) {
           resolve(undoList)
-        }else{
+        } else {
           reject(new Error())
         }
-        
       })
     }
   }
