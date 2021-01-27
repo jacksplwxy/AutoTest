@@ -14,11 +14,12 @@
 ·测试种类：
   -- 单元测试：对一个独立的模块进行功能测试
   -- 集成测试：对多个独立的模块进行功能测试。单元测试只能保证当个功能，如果我们测试一个项目，无法确保各个功能之间的依赖没有问题。集成测试，可以让我们站在业务流程的角度来进行测试，以确保这个流程是没有问题的。
-  -- 端到端测试
+  -- 端到端测试：集成测试只是对于前端的测试，是脱离真实后端环境的，仅仅只是将前端放在真实环境中运行，而后端和数据都应该使用Mock的。而端到端测试（E2E Test）则是将整个应用放到真实的环境中运行，包括数据在内也是需要使用真实的。
   -- 回归测试
   -- 性能测试
   -- 压力测试
   -- 安全测试 
+·单元测试：https://zhuanlan.zhihu.com/p/55960017
 ·前端自动化框架种类：
   -- Jasmine
   -- Macha/Chai
@@ -349,6 +350,18 @@
 ·前后端异步代码模拟，可以考虑写个爬虫，定时爬取后端真实数据作为mock测试数据
 
 
+*许可协议：
+  本项目所有文档遵循CC-BY-SA 4.0协议（ https://creativecommons.org/licenses/by-sa/4.0/deed.zh ）。使用者可以对本创作进行转载、节选、混编、二次创作，可以将其运用于商业用途，唯须署名作者，并且采用本创作的内容必须同样采用本协议进行授权
+
+
+*更多前端工程化内容：
+·npm：https://github.com/jacksplwxy/npm
+·webpack：https://github.com/jacksplwxy/webpack
+·代码质量：https://github.com/jacksplwxy/Good-Code
+·前端自动化测试：https://github.com/jacksplwxy/AutoTest
+·前端性能优化：https://github.com/jacksplwxy/FrontEndPerformanceOptimization
+·web安全：https://github.com/jacksplwxy/security
+·持续集成/持续部署：https://github.com/jacksplwxy/CI-CD
 
 
 
