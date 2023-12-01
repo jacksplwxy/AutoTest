@@ -36,7 +36,7 @@
    npm run jest  --watch：只监听所有测试文件的变化，当有变化时则重新测试有变化的文件夹中的测试用例，即watchAll中的o模式
 ·配置：npx jest --init
    运行改命令后，将弹出配置选项，按照提示选择即可,最后生成jest.config.js
-·it：类似test
+·it：test的别名，也可以用it代替test
 ·jest.config.js说明：
   -- 代码：src/Jest/lesson3
   -- coverageDirectory: "testReport"：将覆盖率测试报告输出到testReport文件夹。
